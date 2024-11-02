@@ -1,3 +1,4 @@
+@import "mixin";
 *{
     margin: 0;
     padding: 0;
@@ -58,17 +59,59 @@ body{
 }
 .main-bottom{
     width: 100%;
-    background-color: red;
+    // background-color: red;
     
     ul{
         list-style-type: none;
     }
     li{
         border: 1px solid black;
+        background-color: rgb(55, 82, 82);
         padding: 0.5rem;
+        padding-left: 2.5rem;
         text-transform: capitalize;
         font-size: 1.3rem;
         color: white;
         font-weight: 700;
+        position: relative;
+        user-select: none;
+        @include transition(0.5s);
+        cursor: pointer;
+        
+        
+        .fa-trash{
+            position: absolute;
+            right: 10px;
+            display: none;
+            @include transition(0.5s);
+        }
+        .fa-trash:hover{
+            color: red;
+            
+        }
+      
     }
+    li:hover .fa-trash{
+        display: inline-block;
+    }
+    .done{
+        text-decoration: line-through;
+        background-color: green;
+    }
+    
+    .done::before{
+        content: "";
+        display: inline-block;
+        width: 9px;
+        height: 22px;
+        position: absolute;
+        left: 11px;
+        border-width: 0 4px 4px 0;
+        border-style: solid;
+        transform: rotate(45deg);
+        bottom: 8px;
+    
+    }
+    
 }
+
