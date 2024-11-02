@@ -1,3 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 800px;
+}
+
+.main-top {
+  width: 100%;
+  background-color: rgb(228, 225, 74);
+  padding: 2rem;
+}
+.main-top h1 {
+  padding-top: 1rem;
+  font-size: 5rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+.main-top .inp-but {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+.main-top .inp-but input {
+  width: 70%;
+  height: 50px;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  text-transform: capitalize;
+}
+.main-top .inp-but button {
+  width: 20%;
+  height: 50px;
+  border: none;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.main-bottom {
+  width: 100%;
+  background-color: red;
+}
+.main-bottom ul {
+  list-style-type: none;
+}
+.main-bottom li {
+  border: 1px solid black;
+  padding: 0.5rem;
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  color: white;
+  font-weight: 700;
+}
 
 /*# sourceMappingURL=style.css.map */
